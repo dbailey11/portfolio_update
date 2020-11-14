@@ -1,0 +1,138 @@
+body {
+  /* background-color: #EDDCD8; */
+
+  background-image: url("assets/images/tan_marble_background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*---------------jumbotron top--------------*/
+/* header {
+  background-color: #E2CCBF;
+  
+}
+
+#name {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 35px;
+  color: black;
+}
+
+.nav-link {
+  font-family: "Didact Gothic", sans-serif;
+}*/
+
+#outerJumboTitle {
+  background-color: rgb(163, 163, 163);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* #jumboTitle {
+    
+} */
+
+#name {
+  font-family: "Sansita Swashed", cursive;
+  color: white;
+}
+
+#jumboBrand {
+  float: right;
+}
+
+/* .container {
+  margin: 20px;
+  padding: 15px;
+  position: center;
+  background-color: rgb(141, 141, 141);
+} */
+
+/*---------------social media links---------------*/
+
+#social {
+  text-align: center;
+}
+
+.btn-floating {
+  font-size: 40px;
+  color: black;
+}
+
+/*-----------about me--------------------*/
+
+.card {
+  margin: 20px;
+  padding: 15px;
+  background-color: #e2ccbf;
+  color: black;
+  /* opacity: 0%; */
+}
+
+.card-header {
+  background-color: rgb(163, 163, 163);
+  font-family: "Sansita Swashed", cursive;
+  color: black;
+}
+
+.card-title {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bolder;
+}
+
+#aboutMe {
+  text-align: center;
+  margin-top: 35px;
+  font-family: "Architects Daughter", cursive;
+  font-size: 18px;
+}
+
+.card-tex {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+/*------------portfolio------------------*/
+.containerP {
+  margin: 20px;
+  padding: 15px;
+  position: center;
+  background-color: #e2ccbf;
+}
+
+.cardP {
+  margin: 10px;
+  padding: 15px;
+  background-color: #f0ebe8;
+  color: black;
+}
+
+.card-title {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bolder;
+}
+
+.card-text {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+/*-----------footer------------------*/
+
+.footerBar {
+  position: sticky;
+  text-align: center;
+  width: 100%;
+  line-height: 4;
+  color: honeydew;
+  background-color: #e2ccbf;
+  font-family: "Didact Gothic", sans-serif;
+}
+#brand {
+  position: sticky;
+  line-height: 4;
+}
+.text-white {
+  font-family: "Cedarville Cursive", cursive;
+}
