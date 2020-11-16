@@ -29,9 +29,9 @@ body {
   float: left;
 }
 
-.dropdownMenu {
+#dropdownMenu {
   float: right;
-  color: red;
+  color: black;
   font-size: 45px;
   position: relative;
 }
