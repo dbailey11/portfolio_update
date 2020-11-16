@@ -39,37 +39,41 @@
     <!--jumbotron title-->
     <div class="jumbotron jumbotron-fluid" id="outerJumboTitle">
       <div class="container" id="jumboTitle">
-        <img
-          id="jumboBrand"
-          src="assets\images\cow_skull_brand.png"
-          alt="brand"
-          width="120px"
-          height="120px"
-        />
-        <h1 class="display-4" id="name">Dev</h1>
-        <p class="lead">Simplicity seeker.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              id="jumboBrand"
+              src="assets\images\cow_skull_brand.png"
+              alt="brand"
+              width="120px"
+              height="120px"
+            />
+            <h1 class="display-4" id="name">Dev</h1>
+            <p class="lead">Simplicity.</p>
+          </div>
 
-        <!--drop down hamburger-->
-        <div class="dropdown">
-          <i
-            class="fas fa-bars"
-            type="button"
-            id="dropdownMenu"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-          </i>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#aboutMe">About Me</a>
-            <a class="dropdown-item" href="#portfolio">Portfolio</a>
-            <a class="dropdown-item" href="#">Skills</a>
-            <a class="dropdown-item" href="contact.html">Contact Me</a>
+          <!--drop down hamburger-->
+          <div class="col-md-6">
+            <i
+              class="fas fa-bars"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              id="dropdown"
+            >
+            </i>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#aboutMe">About Me</a>
+              <a class="dropdown-item" href="#portfolio">Portfolio</a>
+              <a class="dropdown-item" href="contact.html">Contact Me</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  
+
     <br />
     <br />
 
@@ -106,7 +110,7 @@
         class="btn-floating btn-lg btn-file"
         type="button"
         role="button"
-        href="assets/Devyn Bailey Resume.pdf"
+        href="assets/docs/Devyn Bailey Resume.pdf"
         target="_blank"
         ><i class="fas fa-file-alt"></i
       ></a>
@@ -115,7 +119,6 @@
     <br />
     <!--about me card-->
     <div class="card">
-      <!-- <div class="card-header">About Me</div> -->
       <div class="card-body">
         <div class="row">
           <div class="col-sm-6">
@@ -127,21 +130,20 @@
             />
           </div>
           <div class="col-sm-6" id="aboutMe">
-            <h2>About Me:</h2>
+            <h3>About Me:</h3>
             <p>
               Hi all, I am Devyn Bailey. A Colorado native who belives in hard
               work and values being kind. With a passion for simplistic styling
-              and an eye for detail, I am here to help improve the lives of
-              those around me. Life has blessed me with a wonderful daughter and
-              becoming a mother has been the most amazing journey to date.
+              and an eye for detail, my goal is to help improve the lives of
+              those around me.
             </p>
             <br />
             <p>
-              Currently I work as an administrator in a business office and am
-              enrolled in the University of Denver's full stack web developer
-              certification course. I am very much looking forward to having the
-              opportunities to join amazing teams and be able to help people.
-              Estimated graduation is March 2021.
+              Currently I work as an administrator and am also enrolled in the
+              University of Denver's full stack web developer certification
+              course. I am very much looking forward to having the opportunities
+              to join amazing teams and be able to help improve lives. Estimated
+              graduation is March 2021.
             </p>
           </div>
         </div>
@@ -153,7 +155,9 @@
 
     <!--container with portfolio projects-->
     <div class="containerP">
-      <div class="card-header" id="portfolio">Portfolio</div>
+      <div class="card-header" id="portfolio">
+        <h3>Portfolio</h3>
+      </div>
       <div class="card-deck">
         <div class="row">
           <!--pokemon app-->
@@ -173,8 +177,16 @@
                 <a
                   href="https://gsteed1677.github.io/furry-bassoon/"
                   target="_blank"
-                  >Click Here!</a
+                  >Click here to run application!</a
                 >
+                <a
+                  class="btn-floating btn-lg btn-git"
+                  type="button"
+                  role="button"
+                  href="https://github.com/gsteed1677/furry-bassoon"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -196,8 +208,16 @@
                 <a
                   href="https://dbailey11.github.io/devs_daily_planner/"
                   target="_blank"
-                  >Click Here!</a
+                  >Click here to run application!</a
                 >
+                <a
+                  class="btn-floating btn-lg btn-git"
+                  type="button"
+                  role="button"
+                  href="https://github.com/dbailey11/devs_daily_planner"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -219,8 +239,15 @@
                 <a
                   href="https://dbailey11.github.io/breeds_quiz_hw4/"
                   target="_blank"
-                  >Click Here!</a
+                  >Click here to run application!</a
                 >
+                <a
+                  class="btn-floating btn-lg btn-git"
+                  type="button"
+                  role="button"
+                  href="https://github.com/dbailey11/breeds_quiz_hw4"
+                  ><i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -231,17 +258,7 @@
     <br />
 
     <footer class="footerBar">
-      <div class="content">
-        <img
-          id="brand"
-          src="assets\images\cow_skull_brand.png"
-          alt="brand"
-          width="40px"
-          height="40px"
-        />
-
-        <i class="far fa-copyright"></i>DAB
-      </div>
+      <div class="content"><i class="far fa-copyright"></i>DAB</div>
     </footer>
 
     <!-- Bootstrap JavaScript CDNs-->
