@@ -1,0 +1,71 @@
+body {
+    /* background-color: #EDDCD8; */
+  
+    background-image: url("assets/images/tan_marble_background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/*---------nav bar---------------*/
+
+  header {
+    background-color:rgb(141, 141, 141);
+  }
+  
+  .dropdown {
+      float: right;
+  }
+
+/*------------contact------------*/
+
+  .container {
+    margin: 20px;
+    padding: 15px;
+    position: center;
+    background-color: rgb(141, 141, 141);
+  }
+
+  .card {
+    margin: 10px;
+    padding: 15px;
+    background-color: #e2ccbf;
+    color: black;
+    /* opacity: 0%; */
+  }
+  
+  .card-header {
+    background-color: rgb(163, 163, 163);
+    font-family: 'Numans', sans-serif;
+    color: black;
+  }
+  
+  .card-title {
+    font-family: 'Numans', sans-serif;
+    font-weight: bolder;
+  }
+  
+  .card-tex {
+    font-family: 'Didact Gothic', sans-serif;
+  }
+  
+  /*-----------footer------------------*/
+
+.footerBar {
+    position: sticky;
+    text-align: center;
+    width: 100%;
+    line-height: 4;
+    color: honeydew;
+    background-color: rgb(163, 163, 163);
+    font-family: 'Numans', sans-serif;
+  
+  }
+  #brand {
+    position: sticky;
+    line-height: 4;
+  }
+  .text-white {
+    font-family: "Cedarville Cursive", cursive;
+  }

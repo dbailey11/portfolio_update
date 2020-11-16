@@ -9,31 +9,16 @@ body {
 }
 
 /*---------------jumbotron top--------------*/
-/* header {
-  background-color: #E2CCBF;
-  
-}
-
-#name {
-  font-family: "Sansita Swashed", cursive;
-  font-size: 35px;
-  color: black;
-}
-
-.nav-link {
-  font-family: "Didact Gothic", sans-serif;
-}*/
 
 #outerJumboTitle {
   background-color: rgb(163, 163, 163);
   color: white;
   display: flex;
   flex-direction: column;
+  font-family: 'Numans', sans-serif;
+
 }
 
-/* #jumboTitle {
-    
-} */
 
 #name {
   font-family: "Sansita Swashed", cursive;
@@ -41,15 +26,16 @@ body {
 }
 
 #jumboBrand {
-  float: right;
+  float: left;
 }
 
-/* .container {
-  margin: 20px;
-  padding: 15px;
-  position: center;
-  background-color: rgb(141, 141, 141);
-} */
+.dropdownMenu {
+  float: right;
+  color: red;
+  font-size: 45px;
+  position: relative;
+}
+
 
 /*---------------social media links---------------*/
 
@@ -65,7 +51,7 @@ body {
 /*-----------about me--------------------*/
 
 .card {
-  margin: 20px;
+  margin: 10px;
   padding: 15px;
   background-color: #e2ccbf;
   color: black;
@@ -74,19 +60,20 @@ body {
 
 .card-header {
   background-color: rgb(163, 163, 163);
-  font-family: "Sansita Swashed", cursive;
+  font-family: 'Numans', sans-serif;
   color: black;
 }
 
 .card-title {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'Numans', sans-serif;
   font-weight: bolder;
 }
 
 #aboutMe {
   text-align: center;
   margin-top: 35px;
-  font-family: "Architects Daughter", cursive;
+  /* font-family: "Architects Daughter", cursive; */
+  font-family: 'Numans', sans-serif;
   font-size: 18px;
 }
 
@@ -110,12 +97,13 @@ body {
 }
 
 .card-title {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'Numans', sans-serif;
   font-weight: bolder;
 }
 
 .card-text {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'Numans', sans-serif;
+
 }
 
 /*-----------footer------------------*/
@@ -126,8 +114,9 @@ body {
   width: 100%;
   line-height: 4;
   color: honeydew;
-  background-color: #e2ccbf;
-  font-family: "Didact Gothic", sans-serif;
+  background-color: rgb(163, 163, 163);
+  font-family: 'Numans', sans-serif;
+
 }
 #brand {
   position: sticky;

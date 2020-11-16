@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Numans&display=swap"
+      rel="stylesheet"
+    />
     <!--fontawesome.com-->
     <script
       src="https://kit.fontawesome.com/680424053b.js"
@@ -31,40 +36,6 @@
   </head>
 
   <body>
-    <!-- <div class="bg"></div> -->
-    <!-- <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <img
-          id="brand"
-          src="assets\images\cow_skull_brand.png"
-          alt="brand"
-          width="40px"
-          height="40px"
-        />
-        <div class="navbar-brand" id="name">DAB</div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="index.html"
-              >About Me<span class="sr-only">(current)</span></a
-            >
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </div>
-        </div>
-      </nav>
-    </header> -->
-
     <!--jumbotron title-->
     <div class="jumbotron jumbotron-fluid" id="outerJumboTitle">
       <div class="container" id="jumboTitle">
@@ -77,6 +48,27 @@
         />
         <h1 class="display-4" id="name">Dev</h1>
         <p class="lead">Simplicity seeker.</p>
+        <div class="dropdown">
+          <i
+            class="fas fa-bars"
+            type="button"
+            id="dropdownMenu"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          </i>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">
+              <a href="#aboutMe"></a>About Me
+            </button>
+            <button class="dropdown-item" type="button" href="#portfolio">
+              Portfolio
+            </button>
+            <button class="dropdown-item" type="button">Skills</button>
+            <button class="dropdown-item" type="button">Contact Me</button>
+          </div>
+        </div>
       </div>
     </div>
     <br />
@@ -84,13 +76,41 @@
 
     <!--social media links-->
     <div id="social">
+      <a
+        class="btn-floating btn-lg btn-li"
+        type="button"
+        role="button"
+        href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+        target="_blank"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
 
-      <a class="btn-floating btn-lg btn-li" type="button" role="button" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a
+        class="btn-floating btn-lg btn-git"
+        type="button"
+        role="button"
+        href="https://github.com/dbailey11"
+        target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
 
-      <a class="btn-floating btn-lg btn-git" type="button" role="button" href="https://github.com/dbailey11" target="_blank"><i class="fab fa-github"></i></a>
+      <a
+        class="btn-floating btn-lg btn-email"
+        type="button"
+        role="button"
+        href="contact.html"
+        target="_blank"
+        ><i class="fas fa-envelope"></i
+      ></a>
 
-      <a class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fas fa-envelope"></i></a>
-
+      <a
+        class="btn-floating btn-lg btn-file"
+        type="button"
+        role="button"
+        href="assets/Devyn Bailey Resume.pdf"
+        target="_blank"
+        ><i class="fas fa-file-alt"></i
+      ></a>
     </div>
     <br />
     <br />
@@ -108,11 +128,12 @@
             />
           </div>
           <div class="col-sm-6" id="aboutMe">
+            <h2>About Me:</h2>
             <p>
-              Hi all, I am Devyn. A Colorado native who belives in hard work and
-              values being kind. With a passion for simplistic styling and an
-              eye for detail, I am here to help improve the lives of those
-              around me. Life has blessed me with a wonderful daughter and
+              Hi all, I am Devyn Bailey. A Colorado native who belives in hard
+              work and values being kind. With a passion for simplistic styling
+              and an eye for detail, I am here to help improve the lives of
+              those around me. Life has blessed me with a wonderful daughter and
               becoming a mother has been the most amazing journey to date.
             </p>
             <br />
@@ -133,9 +154,10 @@
 
     <!--container with portfolio projects-->
     <div class="containerP">
-      <div class="card-header">Portfolio</div>
+      <div class="card-header" id="portfolio">Portfolio</div>
       <div class="card-deck">
         <div class="row">
+
           <!--pokemon app-->
           <div class="col-sm-4">
             <div class="cardP">
@@ -150,6 +172,11 @@
                   Pokemon website created for fans and gamers who are looking
                   for Pokemon statistics and playing cards.
                 </p>
+                <a
+                  href="https://gsteed1677.github.io/furry-bassoon/"
+                  target="_blank"
+                  >Click Here!</a
+                >
               </div>
             </div>
           </div>
@@ -166,29 +193,36 @@
                 <h5 class="card-title">Daily Planner</h5>
                 <p class="card-text">
                   A simple application that allows you to track events and "to
-                  do's" throughout your day. Any text input will be saved to
-                  local storage and allow you to access daily events even if you
-                  leave the page so you never forget what is on your daily
-                  schedule.
+                  do's" throughout your day.
                 </p>
+                <a
+                  href="https://dbailey11.github.io/devs_daily_planner/"
+                  target="_blank"
+                  >Click Here!</a
+                >
               </div>
             </div>
           </div>
 
-          <!--weather dashboard app-->
+          <!--breed quiz app-->
           <div class="col-sm-4">
             <div class="cardP">
               <img
-                src="assets/images/weather_dashboard_screenshot.png"
+                src="assets/images/breeds_quiz_hw4_start.png"
                 class="card-img-top"
-                alt="Weather Dashboard"
+                alt="Breed Quiz"
               />
               <div class="card-body">
-                <h5 class="card-title">Weather Dashboard</h5>
+                <h5 class="card-title">Dog Breed Quiz</h5>
                 <p class="card-text">
-                  A practical application that allows users to look up current
-                  and future weather conditions for any US city.
+                  A fun and simple application that quizes users on their
+                  knowledge of dog breeds.
                 </p>
+                <a
+                  href="https://dbailey11.github.io/breeds_quiz_hw4/"
+                  target="_blank"
+                  >Click Here!</a
+                >
               </div>
             </div>
           </div>
@@ -207,9 +241,8 @@
           width="40px"
           height="40px"
         />
-        
-        <i class="far fa-copyright"></i>DAB
 
+        <i class="far fa-copyright"></i>DAB
       </div>
     </footer>
 
