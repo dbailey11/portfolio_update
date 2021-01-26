@@ -11,5 +11,5 @@ Click here to launch portfolio: https://dbailey11.github.io/portfolio_update/
 ## Credits
 
 - https://fontawesome.com/
-- https://getbootstrap.com/
+- https://bulma.io/documentation/
 - https://w3schools.com

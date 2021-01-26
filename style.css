@@ -1,19 +1,83 @@
 body {
-  background-image: url("assets/images/tan_marble_background.jpg");
+  /* background-image: url("assets/images/tan_marble_background.jpg"); */
+  /* background-color: hsl(0, 0%, 21%); */
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  
 }
 
 div {
   display: block;
 }
 
+.hero {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#intro {
+  color: black;
+  padding-top: 100px;
+  padding-left: 0px;
+}
+
+.hero.is-fullheight {
+  min-height: 80vh;
+}
+
+.hero-body {
+  background-image: url("assets/images/fieldimg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+}
+
+
+
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+  position: relative;
+  width: auto;
+}
+
+.section {
+  padding: 3rem 1.5rem;
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+}
+
 .media {
   align-items: flex-start;
   display: flex;
   text-align: inherit;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .media-content {
@@ -25,16 +89,41 @@ div {
 
 .section-heading {
   text-align: center;
+  margin-top: 1em;
+  margin-bottom: 6em;
 }
 
-.has-same-height .card {
-  /* height: 320px; */
-  overflow: hidden;
+.title {
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.subtitle {
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.title.is-2 {
+  font-size: 2.5rem;
+}
+
+.title.is-4 {
+  font-size: 1.5rem;
+}
+
+.subtitle.is-5 {
+  font-size: 1.25rem;
 }
 
 .card {
   max-width: 100%;
   position: relative;
+  box-shadow: 0 0.5em 1em rgba(10,10,10,.1), 0 0 0 1px rgba(10, 10, 10, .02);
+  margin: 10px;
+  padding: 15px;
+  background-color: #e2ccbf;
+  color: black;
+
 }
 
 .card-image {
@@ -47,6 +136,40 @@ div {
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+.has-same-height .card {
+  height: fit-content;
+  overflow: hidden;
+}
+
+.card-content {
+  background-color: transparent;
+  padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.card-content h3 {
+  text-align: center;
+}
+
+h3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 1.3em;
+  margin-block-end: 1.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 p {
@@ -63,6 +186,59 @@ p {
   overflow: hidden;
   padding: 0;
   width: 100%;
+}
+
+.content table {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color: gray;
+  display: table;
+}
+
+.box {
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em rgba(10,10,10,.1), 0 0 0 1px rgba(10, 10, 10, .02);
+  display: block;
+  padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.control {
+  box-sizing: border-box;
+  clear: both;
+  font-size: 1rem;
+  position: relative;
+  text-align: inherit;
+}
+
+.field.is-grouped {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.has-text-centered {
+  text-align: center;
+}
+
+footer {
+  color:rgb(163, 163, 163)
+}
+
+strong {
+  color: rgb(163, 163, 163);
 }
 
 
@@ -109,12 +285,7 @@ p {
 
 /*-----------about me--------------------*/
 
-.card {
-  margin: 10px;
-  padding: 15px;
-  background-color: #e2ccbf;
-  color: black;
-}
+
 
 #me {
   margin-left: 45px;
@@ -132,7 +303,7 @@ p {
   margin: 20px;
   padding: 15px;
   position: center;
-  background-color: #e2ccbf;
+  background-color: #ECD0A3;
 }
 
 .cardP {

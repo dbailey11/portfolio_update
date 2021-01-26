@@ -59,7 +59,7 @@
             </span>
             <span>Portfolio</span>
           </a>
-          <a class="navbar-item" href="contact.html">
+          <a class="navbar-item" href="#contact">
             <span class="icon">
               <i class="fas fa-envelope"> </i>
             </span>
@@ -70,7 +70,7 @@
     </nav>
 
     <!-- -------------------BANNER WITH NAME----------------------------- -->
-    <section class="hero is-dark is-fullheight is-fullheight-with-navbar">
+    <section class="hero is-dark is-fullheight is-fullheight-with-navbar" id="banner">
       <div class="hero-body">
         <div class="container">
           <div class="columns">
@@ -105,7 +105,6 @@
             and an eye for detail, my goal is to help improve the lives of those
             around me.
           </p>
-          <br />
           <p>
             Currently I am enrolled in the University of Denver's full stack web
             developer certification course. I am very much looking forward to
@@ -118,7 +117,7 @@
           <div class="column">
             <div class="card">
               <div class="card-content">
-                <h3 class="title is-4">Profile</h3>
+                <h3 class="title is-4">Connect</h3>
                 <div class="content">
                   <table class="table-profile">
                     <tbody>
@@ -185,7 +184,7 @@
           <div class="column">
             <div class="card">
               <div class="card-image">
-                <figure class="image">
+                <figure class="image is-4x3">
                   <img
                     class="is-rounded"
                     src="assets/images/aboutme.jpg"
@@ -284,9 +283,6 @@
       </div>
     </section>
 
-    <br />
-    <br />
-
     <!-- -------------------------PORTFOLIO---------------------------- -->
     <section class="section" id="portfolio">
       <div class="container">
@@ -296,10 +292,8 @@
           <br />
           <div class="container portfolio-container">
             <div class="columns">
-
               <!-- *******COLUMN 1 of 3*********** -->
               <div class="column is-4">
-
                 <!-- POKEMON APP -->
                 <div class="card">
                   <header class="card-header">
@@ -337,7 +331,7 @@
                     </div>
                   </footer>
                 </div>
-                
+
                 <!-- TEAM APP -->
                 <div class="card">
                   <header class="card-header">
@@ -379,7 +373,6 @@
 
               <!-- *******COLUMN 2 of 3*********** -->
               <div class="column is-4">
-
                 <!-- CAT MATCH APP -->
                 <div class="card">
                   <header class="card-header">
@@ -459,7 +452,6 @@
 
               <!-- *******COLUMN 3 of 3*********** -->
               <div class="column is-4">
-
                 <!-- EMP TRACKER APP -->
                 <div class="card">
                   <header class="card-header">
@@ -504,15 +496,64 @@
       </div>
     </section>
 
-    <br />
+    <!-- -----------------CONTACT------------------------ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h3 class="title is-2">Contact</h3>
+          <h4 class="subtitle is-5">Shoot me a message</h4>
+        </div>
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <div class="box">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Text input" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Email input" />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+              <div class="field is-grouped has-text-centered">
+                <div class="control">
+                  <button class="button is-link is-medium">
+                    <span class="icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>Submit</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
 
     <!-- ------------------FOOTER---------------------- -->
-    <footer class="footer has-background-grey-light">
+    <footer class="footer has-background-dark">
       <div class="content has-text-centered">
         <p>
-          <strong>Copyright</strong> <a href="https://github.com/dbailey11"><i class="fab fa-github"></i
-            >Devyn Bailey</a>.
-          <br>
+          <strong>Copyright</strong>
+          <a href="https://github.com/dbailey11"
+            ><i class="fab fa-github"></i>Devyn Bailey</a
+          >.
+          <br />
           Powered by: <strong>Bulma</strong>
         </p>
       </div>
