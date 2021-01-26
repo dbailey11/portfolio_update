@@ -6,6 +6,68 @@ body {
   background-size: cover;
 }
 
+div {
+  display: block;
+}
+
+.media {
+  align-items: flex-start;
+  display: flex;
+  text-align: inherit;
+}
+
+.media-content {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: inherit;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.has-same-height .card {
+  /* height: 320px; */
+  overflow: hidden;
+}
+
+.card {
+  max-width: 100%;
+  position: relative;
+}
+
+.card-image {
+  display: block;
+  position: relative;
+}
+
+.image.is-128x128 {
+  padding-top: 75%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.progress {
+  border: none;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+
+/* ----------------OLD VERSION----------------------------- */
+
 /*---------------jumbotron top--------------*/
 
 #outerJumboTitle {

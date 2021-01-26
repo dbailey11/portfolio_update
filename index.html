@@ -22,13 +22,12 @@
       src="https://kit.fontawesome.com/680424053b.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Bootstrap CSS -->
+    <!-- Bulma CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
+
     <!-- css style sheet -->
     <link href="style.css" rel="stylesheet" />
 
@@ -36,249 +35,487 @@
   </head>
 
   <body>
-    <!--jumbotron title-->
-    <div class="jumbotron jumbotron-fluid" id="outerJumboTitle">
-      <div class="container" id="jumboTitle">
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              id="jumboBrand"
-              src="assets\images\cow_skull_brand.png"
-              alt="brand"
-              width="120px"
-              height="120px"
-            />
-            <h1 class="display-4" id="name">Dev</h1>
-            <p class="lead">Simplicity.</p>
-          </div>
+    <!-- ---------------------NAVBAR--------------------------------- -->
+    <nav class="navbar is-light is-fixed-top">
+      <div class="navbar-brand">
+        <div
+          class="navbar-burger burger"
+          data-target="navbarExampleTransparent"
+        >
+          <span></span>
+        </div>
+      </div>
+      <div id="navbarExampleTransparent" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#aboutMe">
+            <span class="icon">
+              <i class="fas fa-info"> </i>
+            </span>
+            <span>About Me</span>
+          </a>
+          <a class="navbar-item" href="#portfolio">
+            <span class="icon">
+              <i class="fas fa-th-list"> </i>
+            </span>
+            <span>Portfolio</span>
+          </a>
+          <a class="navbar-item" href="contact.html">
+            <span class="icon">
+              <i class="fas fa-envelope"> </i>
+            </span>
+            <span>Contact Me</span>
+          </a>
+        </div>
+      </div>
+    </nav>
 
-          <!--drop down hamburger-->
-          <div class="col-md-6">
-            <i
-              class="fas fa-bars"
-              type="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              id="dropdown"
-            >
-            </i>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#aboutMe">About Me</a>
-              <a class="dropdown-item" href="#portfolio">Portfolio</a>
-              <a class="dropdown-item" href="contact.html">Contact Me</a>
+    <!-- -------------------BANNER WITH NAME----------------------------- -->
+    <section class="hero is-dark is-fullheight is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-one-third">
+              <img
+                id="jumboBrand"
+                src="assets\images\cow_skull_brand.png"
+                alt="brand"
+                width="300px"
+                height="300px"
+              />
+            </div>
+            <div class="column" id="intro">
+              Hello!
+              <h1 class="display-4" id="name">I'm Dev</h1>
+              <p class="lead">A full stack web developer.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <br />
-    <br />
+    <!-----------------------ABOUT ME SECTION------------------------------------->
+    <section class="section" id="about">
+      <div class="section-heading">
+        <h3 class="title is-2">About Me</h3>
+        <h4 class="subtitle is-5">Simply Made!</h4>
+        <div class="container">
+          <p>
+            Hi all, I am Devyn Bailey. A Colorado native who belives in hard
+            work and values being kind. With a passion for simplistic styling
+            and an eye for detail, my goal is to help improve the lives of those
+            around me.
+          </p>
+          <br />
+          <p>
+            Currently I am enrolled in the University of Denver's full stack web
+            developer certification course. I am very much looking forward to
+            having the opportunities to join amazing teams and be able to help
+            improve lives. Estimated graduation is March 2021.
+          </p>
+        </div>
+        <div class="columns has-same-height">
+          <!-- PROFILE -->
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <h3 class="title is-4">Profile</h3>
+                <div class="content">
+                  <table class="table-profile">
+                    <tbody>
+                      <tr>
+                        <th colspan="1"></th>
+                        <th colspan="2"></th>
+                      </tr>
+                      <tr>
+                        <td>
+                          Phone: <i class="fas fa-mobile"> 970.396.0842</i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Email:
+                          <i class="far fa-envelope">
+                            baileydevyn19@gmail.com</i
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="buttons has-addons is-centered">
+                  <a
+                    class="button is-link"
+                    type="button"
+                    role="button"
+                    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    class="button is-link"
+                    type="button"
+                    role="button"
+                    href="https://github.com/dbailey11"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
 
-    <!--social media links-->
-    <div id="social">
-      <a
-        class="btn-floating btn-lg btn-li"
-        type="button"
-        role="button"
-        href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-        target="_blank"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
+                  <a
+                    class="button is-link"
+                    type="button"
+                    role="button"
+                    href="contact.html"
+                    target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
 
-      <a
-        class="btn-floating btn-lg btn-git"
-        type="button"
-        role="button"
-        href="https://github.com/dbailey11"
-        target="_blank"
-        ><i class="fab fa-github"></i
-      ></a>
-
-      <a
-        class="btn-floating btn-lg btn-email"
-        type="button"
-        role="button"
-        href="contact.html"
-        target="_blank"
-        ><i class="fas fa-envelope"></i
-      ></a>
-
-      <a
-        class="btn-floating btn-lg btn-file"
-        type="button"
-        role="button"
-        href="assets/docs/Devyn Bailey Resume.pdf"
-        target="_blank"
-        ><i class="fas fa-file-alt"></i
-      ></a>
-    </div>
-    <br />
-    <br />
-    <!--about me card-->
-    <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-sm-6">
-            <img
-              id="me"
-              src="assets/images/aboutme.jpg"
-              class="img-fluid img-thumbnail"
-              alt="selfie"
-            />
+                  <a
+                    class="button is-link"
+                    type="button"
+                    role="button"
+                    href="assets/docs/Devyn Bailey Resume.pdf"
+                    target="_blank"
+                    ><i class="fas fa-file-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-6" id="aboutMe">
-            <h3>About Me:</h3>
-            <p>
-              Hi all, I am Devyn Bailey. A Colorado native who belives in hard
-              work and values being kind. With a passion for simplistic styling
-              and an eye for detail, my goal is to help improve the lives of
-              those around me.
-            </p>
-            <br />
-            <p>
-              Currently I work as an administrator and am also enrolled in the
-              University of Denver's full stack web developer certification
-              course. I am very much looking forward to having the opportunities
-              to join amazing teams and be able to help improve lives. Estimated
-              graduation is March 2021.
-            </p>
-            <i class="fas fa-mobile"> 970.396.0842</i>
-            <br />
-            <i class="far fa-envelope"> baileydevyn19@gmail.com</i>
+          <!-- PROFILE PICTURE -->
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    class="is-rounded"
+                    src="assets/images/aboutme.jpg"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- SKILLS -->
+          <div class="column">
+            <div class="card">
+              <div class="card-content skills-content">
+                <h3 class="title is-4">Skills</h3>
+                <div class="content">
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>HTML5/CSS3</strong>
+                          <br />
+                          <progress
+                            class="progress is-primary"
+                            value="90"
+                            max="100"
+                          ></progress>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>JavaScript</strong>
+                          <br />
+                          <progress
+                            class="progress is-primary"
+                            value="70"
+                            max="100"
+                          ></progress>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Node.js</strong>
+                          <br />
+                          <progress
+                            class="progress is-primary"
+                            value="60"
+                            max="100"
+                          ></progress>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Express</strong>
+                          <br />
+                          <progress
+                            class="progress is-primary"
+                            value="70"
+                            max="100"
+                          ></progress>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>SQL/NoSQL</strong>
+                          <br />
+                          <progress
+                            class="progress is-primary"
+                            value="50"
+                            max="100"
+                          ></progress>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <br />
     <br />
 
-    <!--container with portfolio projects-->
-    <div class="containerP">
-      <div class="card-header" id="portfolio">
-        <h3>Portfolio</h3>
-      </div>
-      <div class="card-deck">
-        <div class="row">
-          <!--pokemon app-->
-          <div class="col-sm-4">
-            <div class="cardP">
-              <img
-                src="assets/images/screenshot.png"
-                class="card-img-top"
-                alt="All Things Pokemon"
-              />
-              <div class="card-body">
-                <h5 class="card-title">All Things Pokemon</h5>
-                <p class="card-text">
-                  Pokemon website created for fans and gamers who are looking
-                  for Pokemon statistics and playing cards.
-                </p>
-                <a
-                  href="https://gsteed1677.github.io/furry-bassoon/"
-                  target="_blank"
-                  >Click here to run application!</a
-                >
-                <a
-                  class="btn-floating btn-lg btn-git"
-                  type="button"
-                  role="button"
-                  href="https://github.com/gsteed1677/furry-bassoon"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
+    <!-- -------------------------PORTFOLIO---------------------------- -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <h3 class="title is-2">Portfolio</h3>
+          <h5 class="subtitle is-6">Latest projects</h5>
+          <br />
+          <div class="container portfolio-container">
+            <div class="columns">
 
-          <!--daily planner app-->
-          <div class="col-sm-4">
-            <div class="cardP">
-              <img
-                src="assets/images/devs_daily_planner_screenshot.png"
-                class="card-img-top"
-                alt="Daily Planner"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Daily Planner</h5>
-                <p class="card-text">
-                  A simple application that allows you to track events and "to
-                  do's" throughout your day.
-                </p>
-                <a
-                  href="https://dbailey11.github.io/devs_daily_planner/"
-                  target="_blank"
-                  >Click here to run application!</a
-                >
-                <a
-                  class="btn-floating btn-lg btn-git"
-                  type="button"
-                  role="button"
-                  href="https://github.com/dbailey11/devs_daily_planner"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
+              <!-- *******COLUMN 1 of 3*********** -->
+              <div class="column is-4">
 
-          <!--team summary app-->
-          <div class="col-sm-4">
-            <div class="cardP">
-              <img
-                src="./assets/images/screenshot.JPG"
-                class="card-img-top"
-                alt="Team Summary App"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Team Summary</h5>
-                <p class="card-text">
-                  A simple command line application using Node.js that allows a
-                  user to create a team roster.
-                </p>
-                <a
-                  href="https://github.com/dbailey11/team_summary"
-                  target="_blank"
-                  >Click here to run application!</a
-                >
-                <a
-                  class="btn-floating btn-lg btn-git"
-                  type="button"
-                  role="button"
-                  href="https://github.com/dbailey11/breeds_quiz_hw4"
-                  ><i class="fab fa-github"></i
-                ></a>
+                <!-- POKEMON APP -->
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      <span>All Things Pokemon</span>
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <figure class="image">
+                      <img
+                        src="assets/images/screenshot.png"
+                        class="card-img-top"
+                        alt="All Things Pokemon"
+                      />
+                    </figure>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="buttons are-medium">
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://gsteed1677.github.io/furry-bassoon/"
+                        target="_blank"
+                        ><i class="fas fa-window-maximize"></i>Preview</a
+                      >
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://github.com/gsteed1677/furry-bassoon"
+                        target="_blank"
+                        ><i class="fab fa-github"></i>Source code</a
+                      >
+                    </div>
+                  </footer>
+                </div>
+                
+                <!-- TEAM APP -->
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      <span>Team Summary</span>
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <figure class="image">
+                      <img
+                        src="assets/images/screenshot.JPG"
+                        class="card-img-top"
+                        alt="Team Summary"
+                      />
+                    </figure>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="buttons are-medium">
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://github.com/dbailey11/team_summary"
+                        target="_blank"
+                        ><i class="fas fa-window-maximize"></i>Preview</a
+                      >
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://github.com/dbailey11/team_summary"
+                        target="_blank"
+                        ><i class="fab fa-github"></i>Source code</a
+                      >
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <!-- *******COLUMN 2 of 3*********** -->
+              <div class="column is-4">
+
+                <!-- CAT MATCH APP -->
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      <span>The Purr-fect Match</span>
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <figure class="image">
+                      <img
+                        src="assets/images/mighty-sea-42900.herokuapp.com_.png"
+                        class="card-img-top"
+                        alt="Cat Match App"
+                      />
+                    </figure>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="buttons are-medium">
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://mighty-sea-42900.herokuapp.com/"
+                        target="_blank"
+                        ><i class="fas fa-window-maximize"></i>Preview</a
+                      >
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://github.com/CodyOps/Project-2"
+                        target="_blank"
+                        ><i class="fab fa-github"></i>Source code</a
+                      >
+                    </div>
+                  </footer>
+                </div>
+
+                <!-- PLANNER APP -->
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      <span>Daily Planner</span>
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <figure class="image">
+                      <img
+                        src="assets/images/devs_daily_planner_screenshot.png"
+                        class="card-img-top"
+                        alt="Daily Planner"
+                      />
+                    </figure>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="buttons are-medium">
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://dbailey11.github.io/devs_daily_planner/"
+                        target="_blank"
+                        ><i class="fas fa-window-maximize"></i>Preview</a
+                      >
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://github.com/dbailey11/devs_daily_planner"
+                        target="_blank"
+                        ><i class="fab fa-github"></i>Source code</a
+                      >
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <!-- *******COLUMN 3 of 3*********** -->
+              <div class="column is-4">
+
+                <!-- EMP TRACKER APP -->
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      <span>Employee Tracker</span>
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <figure class="image">
+                      <img
+                        src="assets/images/emp_track_screenshot.JPG"
+                        class="card-img-top"
+                        alt="Emp tracker"
+                      />
+                    </figure>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="buttons are-medium">
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://dbailey11.github.io/devs_daily_planner/"
+                        target="_blank"
+                        ><i class="fas fa-window-maximize"></i>Preview</a
+                      >
+                      <a
+                        class="button is-dark"
+                        type="button"
+                        role="button"
+                        href="https://github.com/dbailey11/employee_tracker"
+                        target="_blank"
+                        ><i class="fab fa-github"></i>Source code</a
+                      >
+                    </div>
+                  </footer>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <br />
 
-    <footer class="footerBar">
-      <div class="content"><i class="far fa-copyright"></i>DAB</div>
+    <!-- ------------------FOOTER---------------------- -->
+    <footer class="footer has-background-grey-light">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Copyright</strong> <a href="https://github.com/dbailey11"><i class="fab fa-github"></i
+            >Devyn Bailey</a>.
+          <br>
+          Powered by: <strong>Bulma</strong>
+        </p>
+      </div>
     </footer>
-
-    <!-- Bootstrap JavaScript CDNs-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
