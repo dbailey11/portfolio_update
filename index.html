@@ -36,13 +36,16 @@
 
   <body>
     <!-- ---------------------NAVBAR--------------------------------- -->
-    <nav class="navbar is-light is-fixed-top">
+    <nav class="navbar is-dark is-fixed-top">
       <div class="navbar-brand">
         <div
           class="navbar-burger burger"
           data-target="navbarExampleTransparent"
         >
           <span></span>
+          <span></span>
+          <span></span>
+
         </div>
       </div>
       <div id="navbarExampleTransparent" class="navbar-menu">
@@ -72,9 +75,9 @@
     <!-- -------------------BANNER WITH NAME----------------------------- -->
     <section class="hero is-dark is-fullheight is-fullheight-with-navbar" id="banner">
       <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-one-third">
+        <div class="container" >
+          <div class="columns" id="banner">
+            <!-- <div class="column is-one-third"> -->
               <img
                 id="jumboBrand"
                 src="assets\images\cow_skull_brand.png"
@@ -82,12 +85,17 @@
                 width="300px"
                 height="300px"
               />
-            </div>
-            <div class="column" id="intro">
-              Hello!
-              <h1 class="display-4" id="name">I'm Dev</h1>
-              <p class="lead">A full stack web developer.</p>
-            </div>
+            <!-- </div> -->
+            <!-- <div class="column" id="intro"> -->
+              <div class="title" id="bannerTitle">
+                <h1 class="display-4" id="name">D.Bailey</h1>
+              </div>
+              <br>
+              <div class="content">
+                <p>A full stack web developer.</p>
+              </div>
+              
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -104,17 +112,16 @@
             work and values being kind. With a passion for simplistic styling
             and an eye for detail, my goal is to help improve the lives of those
             around me.
-          </p>
-          <p>
             Currently I am enrolled in the University of Denver's full stack web
             developer certification course. I am very much looking forward to
             having the opportunities to join amazing teams and be able to help
-            improve lives. Estimated graduation is March 2021.
+            improve the world we live in. Estimated graduation is March 2021.
           </p>
         </div>
+        <br>
         <div class="columns has-same-height">
           <!-- PROFILE -->
-          <div class="column">
+          <div class="column" id="aboutMeCards">
             <div class="card">
               <div class="card-content">
                 <h3 class="title is-4">Connect</h3>
@@ -158,7 +165,6 @@
                     target="_blank"
                     ><i class="fab fa-github"></i
                   ></a>
-
                   <a
                     class="button is-link"
                     type="button"
@@ -167,7 +173,6 @@
                     target="_blank"
                     ><i class="fas fa-envelope"></i
                   ></a>
-
                   <a
                     class="button is-link"
                     type="button"

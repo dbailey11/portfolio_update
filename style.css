@@ -1,6 +1,6 @@
 body {
   /* background-image: url("assets/images/tan_marble_background.jpg"); */
-  /* background-color: hsl(0, 0%, 21%); */
+  background-color: hsl(0, 0%, 21%);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,6 +21,21 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#bannerTitle {
+  position: relative;
+  text-align: center;
+  padding-left: 100px;
+}
+
+#name {
+  font-family: "Sansita Swashed", cursive;
+  color: white;
+}
+
+#jumboBrand {
+  padding-top: 25px;
 }
 
 #intro {
@@ -101,18 +116,22 @@ div {
 .subtitle {
   font-weight: 400;
   line-height: 1.25;
+  color: #e2ccbf;
 }
 
 .title.is-2 {
   font-size: 2.5rem;
+  color: #e2ccbf;
 }
 
 .title.is-4 {
   font-size: 1.5rem;
+  
 }
 
 .subtitle.is-5 {
   font-size: 1.25rem;
+  color: #e2ccbf;
 }
 
 .card {
@@ -156,12 +175,33 @@ div {
   text-align: center;
 }
 
+.card-header {
+  background-color: rgb(163, 163, 163);
+  font-family: 'Numans', sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+.card-title {
+  font-family: 'Numans', sans-serif;
+  font-weight: bolder;
+}
+
+.card-text {
+  font-family: 'Numans', sans-serif;
+} 
+
+#aboutMeCards {
+  /* background-image: url("assets/images/fieldimg2.jpg"); */
+}
+
 h3 {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  
 }
 
 h4 {
@@ -178,6 +218,11 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  color: #e2ccbf;
+}
+
+.lead {
+  color: black;
 }
 
 .progress {
@@ -208,6 +253,7 @@ table {
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
+  background-color: #e2ccbf;
 }
 
 .label {
@@ -234,118 +280,13 @@ table {
 }
 
 footer {
-  color:rgb(163, 163, 163)
+  color:rgb(163, 163, 163);
 }
+
+
 
 strong {
   color: rgb(163, 163, 163);
 }
 
 
-/* ----------------OLD VERSION----------------------------- */
-
-/*---------------jumbotron top--------------*/
-
-#outerJumboTitle {
-  background-color: rgb(163, 163, 163);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Numans', sans-serif;
-
-}
-
-#name {
-  font-family: "Sansita Swashed", cursive;
-  color: white;
-}
-
-#jumboBrand {
-  float: left;
-}
-
-#dropdown {
-  color: black;
-  font-size: 45px;
-  float: right;
-  padding-top: 25px;
-}
-
-
-/*---------------social media links---------------*/
-
-#social {
-  text-align: center;
-}
-
-.btn-floating {
-  font-size: 40px;
-  color: black;
-}
-
-/*-----------about me--------------------*/
-
-
-
-#me {
-  margin-left: 45px;
-}
-
-#aboutMe {
-  text-align: center;
-  margin-top: 35px;
-  font-family: 'Numans', sans-serif;
-  font-size: 18px;
-}
-
-/*------------portfolio------------------*/
-.containerP {
-  margin: 20px;
-  padding: 15px;
-  position: center;
-  background-color: #ECD0A3;
-}
-
-.cardP {
-  margin: 10px;
-  padding: 15px;
-  background-color: #f0ebe8;
-  color: black;
-}
-
-.card-header {
-  background-color: rgb(163, 163, 163);
-  font-family: 'Numans', sans-serif;
-  color: black;
-  font-weight: bolder;
-}
-
-.card-title {
-  font-family: 'Numans', sans-serif;
-  font-weight: bolder;
-}
-
-.card-text {
-  font-family: 'Numans', sans-serif;
-
-}
-
-/*-----------footer------------------*/
-
-.footerBar {
-  position: sticky;
-  text-align: center;
-  width: 100%;
-  line-height: 4;
-  color: honeydew;
-  background-color: rgb(163, 163, 163);
-  font-family: 'Numans', sans-serif;
-
-}
-#brand {
-  position: sticky;
-  line-height: 4;
-}
-.text-white {
-  font-family: "Cedarville Cursive", cursive;
-}
