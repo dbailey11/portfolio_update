@@ -1,3 +1,7 @@
+/* ********************************************************** */
+/* -------------ALL PAGE STYLING----------------------- */
+/* ********************************************************** */
+
 body {
   /* background-image: url("assets/images/tan_marble_background.jpg"); */
   background-color: hsl(0, 0%, 21%);
@@ -12,48 +16,9 @@ body {
   
 }
 
-div {
-  display: block;
-}
+.section {
+  margin: 0px;
 
-.hero {
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#bannerTitle {
-  position: relative;
-  text-align: center;
-  padding-left: 100px;
-}
-
-#name {
-  font-family: "Sansita Swashed", cursive;
-  color: white;
-}
-
-#jumboBrand {
-  padding-top: 25px;
-}
-
-#intro {
-  color: black;
-  padding-top: 100px;
-  padding-left: 0px;
-}
-
-.hero.is-fullheight {
-  min-height: 80vh;
-}
-
-.hero-body {
-  background-image: url("assets/images/fieldimg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  flex-grow: 1;
-  flex-shrink: 0;
   padding: 3rem 1.5rem;
     padding-top: 3rem;
     padding-right: 1.5rem;
@@ -61,7 +26,11 @@ div {
     padding-left: 1.5rem;
 }
 
-
+.section-heading {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 6em;
+}
 
 .container {
   flex-grow: 1;
@@ -74,20 +43,6 @@ div {
   width: auto;
 }
 
-.section {
-  padding: 3rem 1.5rem;
-    padding-top: 3rem;
-    padding-right: 1.5rem;
-    padding-bottom: 3rem;
-    padding-left: 1.5rem;
-}
-
-.media {
-  align-items: flex-start;
-  display: flex;
-  text-align: inherit;
-}
-
 .column {
   display: block;
   flex-basis: 0;
@@ -95,104 +50,12 @@ div {
   flex-shrink: 1;
 }
 
-.media-content {
-  flex-basis: auto;
-  flex-grow: 1;
-  flex-shrink: 1;
-  text-align: inherit;
-}
-
-.section-heading {
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 6em;
-}
-
-.title {
-  font-weight: 600;
-  line-height: 1.125;
-}
-
-.subtitle {
-  font-weight: 400;
-  line-height: 1.25;
-  color: #e2ccbf;
-}
-
-.title.is-2 {
-  font-size: 2.5rem;
-  color: #e2ccbf;
-}
-
-.title.is-4 {
-  font-size: 1.5rem;
-  
-}
-
-.subtitle.is-5 {
-  font-size: 1.25rem;
-  color: #e2ccbf;
-}
-
-.card {
-  max-width: 100%;
-  position: relative;
-  box-shadow: 0 0.5em 1em rgba(10,10,10,.1), 0 0 0 1px rgba(10, 10, 10, .02);
-  margin: 10px;
-  padding: 15px;
-  background-color: #e2ccbf;
-  color: black;
-
-}
-
-.card-image {
+div {
   display: block;
-  position: relative;
 }
 
-.image.is-128x128 {
-  padding-top: 75%;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.has-same-height .card {
-  height: fit-content;
-  overflow: hidden;
-}
-
-.card-content {
-  background-color: transparent;
-  padding: 1.5rem;
-    padding-top: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-.card-content h3 {
-  text-align: center;
-}
-
-.card-header {
-  background-color: rgb(163, 163, 163);
-  font-family: 'Numans', sans-serif;
-  color: black;
-  font-weight: bolder;
-}
-
-.card-title {
-  font-family: 'Numans', sans-serif;
-  font-weight: bolder;
-}
-
-.card-text {
-  font-family: 'Numans', sans-serif;
-} 
-
-#aboutMeCards {
-  /* background-image: url("assets/images/fieldimg2.jpg"); */
+span {
+  color: #e2ccbf;
 }
 
 h3 {
@@ -221,16 +84,129 @@ p {
   color: #e2ccbf;
 }
 
-.lead {
+/* ********************************************************** */
+/* -------------------ALL PAGE CARD STYLING ------------------ */
+/* ********************************************************** */
+.card {
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 0.5em 1em rgba(10,10,10,.1), 0 0 0 1px rgba(10, 10, 10, .02);
+  margin: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #e9d7cd;
   color: black;
 }
 
-.progress {
-  border: none;
+.card-content {
+  background-color: transparent;
+  padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.card-footer {
+  padding: 10px;
+}
+
+
+/* ********************************************************** */
+/* -------------------ALL PAGE TITLES AND SUBTITLES ------------------ */
+/* ********************************************************** */
+
+.title {
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.subtitle {
+  font-weight: 400;
+  line-height: 1.25;
+  color: #e2ccbf;
+}
+
+.title.is-2 {
+  font-size: 2.5rem;
+  color: #e2ccbf;
+}
+
+.title.is-4 {
+  font-size: 1.5rem;
+  
+}
+
+.subtitle.is-5 {
+  font-size: 1.25rem;
+  color: #e2ccbf;
+}
+
+
+/* ********************************************************** */
+/* -------------------BANNER WITH NAME----------------------------- */
+/* ********************************************************** */
+
+.hero {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#bannerTitle {
+  position: relative;
+  text-align: center;
+  padding-left: 100px;
+}
+
+#name {
+  font-family: "Sansita Swashed", cursive;
+  color: white;
+}
+
+#jumboBrand {
+  padding-top: 25px;
+}
+
+.hero.is-fullheight {
+  min-height: 80vh;
+}
+
+.hero-body {
+  background-image: url("assets/images/fieldimg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+}
+
+/* ********************************************************** */
+/* -------------------ABOUT ME SECTION----------------------------- */
+/* ********************************************************** */
+
+#aboutMeCards {
+  background-image: url("assets/images/fieldimg2.jpg");
+  background-repeat: no-repeat;
+}
+
+.card-image {
   display: block;
+  position: relative;
+}
+
+.has-same-height .card {
+  height: fit-content;
   overflow: hidden;
-  padding: 0;
-  width: 100%;
+}
+
+.card-content h3 {
+  text-align: center;
 }
 
 .content table {
@@ -244,6 +220,30 @@ table {
   display: table;
 }
 
+/* ********************************************************** */
+/* -------------------PORTFOLIO SECTION----------------------------- */
+/* ********************************************************** */
+
+.card-header {
+  background-color: hsl(0, 0%, 21%);
+  color: black;
+  font-weight: bolder;
+}
+
+/* ********************************************************** */
+/* -------------------SKILLS SECTION----------------------------- */
+/* ********************************************************** */
+#logo {
+  padding: 15px;
+}
+
+/* ********************************************************** */
+/* -------------------CONTACT SECTION----------------------------- */
+/* ********************************************************** */
+.contact {
+  /* margin: 5px; */
+}
+
 .box {
   border-radius: 6px;
   box-shadow: 0 0.5em 1em rgba(10,10,10,.1), 0 0 0 1px rgba(10, 10, 10, .02);
@@ -253,7 +253,7 @@ table {
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
-  background-color: #e2ccbf;
+  background-color: #e9d7cd;
 }
 
 .label {
@@ -275,18 +275,23 @@ table {
   justify-content: flex-start;
 }
 
-.has-text-centered {
-  text-align: center;
-}
+
+/* ********************************************************** */
+/* -------------------FOOTER SECTION----------------------------- */
+/* ********************************************************** */
+
 
 footer {
   color:rgb(163, 163, 163);
 }
 
-
-
 strong {
   color: rgb(163, 163, 163);
 }
+
+.has-text-centered {
+  text-align: center;
+}
+
 
 
