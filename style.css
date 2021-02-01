@@ -18,11 +18,10 @@ body {
 
 .section {
   margin: 0px;
-
-  padding: 3rem 1.5rem;
-    padding-top: 3rem;
+  padding: 1.5rem;
+    padding-top: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
     padding-left: 1.5rem;
 }
 
@@ -64,7 +63,6 @@ h3 {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  
 }
 
 h4 {
@@ -109,6 +107,7 @@ p {
 
 .card-footer {
   padding: 10px;
+  align-content: center;
 }
 
 
@@ -133,8 +132,8 @@ p {
 }
 
 .title.is-4 {
-  font-size: 1.5rem;
-  
+  font-size: 2.0rem;
+  color: #e2ccbf;
 }
 
 .subtitle.is-5 {
@@ -144,7 +143,7 @@ p {
 
 
 /* ********************************************************** */
-/* -------------------BANNER WITH NAME----------------------------- */
+/* -------------------BANNER----------------------------- */
 /* ********************************************************** */
 
 .hero {
@@ -152,6 +151,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.banner {
+  text-align: center;
 }
 
 #bannerTitle {
@@ -162,11 +165,17 @@ p {
 
 #name {
   font-family: "Sansita Swashed", cursive;
-  color: white;
+  color: rgb(10, 10, 10);
+  font-size: 60px;
 }
 
 #jumboBrand {
   padding-top: 25px;
+  
+}
+
+#banner_p {
+  color: black;
 }
 
 .hero.is-fullheight {
@@ -187,12 +196,14 @@ p {
 }
 
 /* ********************************************************** */
-/* -------------------ABOUT ME SECTION----------------------------- */
+/* -------------------ABOUT ME----------------------------- */
 /* ********************************************************** */
 
 #aboutMeCards {
-  background-image: url("assets/images/fieldimg2.jpg");
+  background-image: url("assets/images/fieldimg.jpg");
   background-repeat: no-repeat;
+  color: #ebe2de;
+  font-size: 20px;
 }
 
 .card-image {
@@ -220,25 +231,48 @@ table {
   display: table;
 }
 
+
 /* ********************************************************** */
-/* -------------------PORTFOLIO SECTION----------------------------- */
+/* -------------------PORTFOLIO----------------------------- */
 /* ********************************************************** */
 
 .card-header {
-  background-color: hsl(0, 0%, 21%);
-  color: black;
+  /* background-color: #cecba2; */
+  /* opacity: 50%; */
   font-weight: bolder;
+  text-align: center;
+}
+
+.card-header-title {
+  font-size: 25px;
+  color: #e9d7cd;
+}
+
+#port_cards {
+  background-image: url("assets/images/fieldimg.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
+#portfolio_title {
+  color: black;
 }
 
 /* ********************************************************** */
-/* -------------------SKILLS SECTION----------------------------- */
+/* -------------------SKILLS----------------------------- */
 /* ********************************************************** */
 #logo {
   padding: 15px;
 }
 
+#skills {
+  background-image: url("assets/images/fieldimg.jpg");
+  background-repeat: no-repeat;
+
+}
+
 /* ********************************************************** */
-/* -------------------CONTACT SECTION----------------------------- */
+/* -------------------CONTACT----------------------------- */
 /* ********************************************************** */
 .contact {
   /* margin: 5px; */
@@ -253,13 +287,18 @@ table {
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
-  background-color: #e9d7cd;
+  /* background-color: #e9d7cd; */
+  background-image: url("assets/images/fieldimg.jpg");
+  background-repeat: no-repeat;
+  
+
 }
 
 .label {
   display: block;
   font-size: 1rem;
   font-weight: 700;
+  color: #e9dcd5;
 }
 
 .control {
@@ -277,7 +316,7 @@ table {
 
 
 /* ********************************************************** */
-/* -------------------FOOTER SECTION----------------------------- */
+/* -------------------FOOTER----------------------------- */
 /* ********************************************************** */
 
 

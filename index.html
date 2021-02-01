@@ -45,7 +45,6 @@
           <span></span>
           <span></span>
           <span></span>
-
         </div>
       </div>
       <div id="navbarExampleTransparent" class="navbar-menu">
@@ -72,36 +71,27 @@
       </div>
     </nav>
 
-    <!-- -------------------BANNER WITH NAME----------------------------- -->
-    <section class="hero is-dark is-fullheight is-fullheight-with-navbar" id="banner">
-      <div class="hero-body">
-        <div class="container" >
-          <div class="columns" id="banner">
-            <!-- <div class="column is-one-third"> -->
-              <img
-                id="jumboBrand"
-                src="assets\images\cow_skull_brand.png"
-                alt="brand"
-                width="300px"
-                height="300px"
-              />
-            <!-- </div> -->
-            <!-- <div class="column" id="intro"> -->
-              <div class="title" id="bannerTitle">
-                <h1 class="display-4" id="name">D.Bailey</h1>
-              </div>
-              <br>
-              <div class="content">
-                <p>A full stack web developer.</p>
-              </div>
-              
-            <!-- </div> -->
-          </div>
+    <!-- -------------------BANNER----------------------------- -->
+    <section
+      class="hero is-dark is-fullheight is-fullheight-with-navbar"
+      id="banner"
+    >
+      <div class="hero-body" id="banner">
+        <div class="container has-text-centered">
+          <h1 class="display-4" id="name">D.Bailey</h1>
+          <p id="banner_p">A full stack web developer.</p>
+          <img
+            id="jumboBrand"
+            src="assets\images\cow_skull_brand.png"
+            alt="brand"
+            width="300px"
+            height="300px"
+          />
         </div>
       </div>
     </section>
 
-    <!-----------------------ABOUT ME SECTION------------------------------------->
+    <!-----------------------ABOUT ME------------------------------------->
     <section class="section" id="about">
       <div class="section-heading">
         <h3 class="title is-2">About Me</h3>
@@ -111,18 +101,18 @@
             Hi all, I am Devyn Bailey. A Colorado native who belives in hard
             work and values being kind. With a passion for simplistic styling
             and an eye for detail, my goal is to help improve the lives of those
-            around me.
-            Currently I am enrolled in the University of Denver's full stack web
-            developer certification course. I am very much looking forward to
-            having the opportunities to join amazing teams and be able to help
-            improve the world we live in. Estimated graduation is March 2021.
+            around me. Currently I am enrolled in the University of Denver's
+            full stack web developer certification course. I am very much
+            looking forward to having the opportunities to join amazing teams
+            and be able to help improve the world we live in. Estimated
+            graduation is March 2021.
           </p>
         </div>
-        <br>
+        <br />
         <div class="columns has-same-height">
           <!-- CONNECT -->
           <div class="column">
-            <div class="card" id="aboutMeCards"> 
+            <div class="card" id="aboutMeCards">
               <div class="card-content">
                 <h3 class="title is-4">Connect</h3>
                 <div class="content">
@@ -189,9 +179,10 @@
           <div class="column">
             <div class="card" id="aboutMeCards">
               <div class="card-image">
-                <figure class="image ">
+                <figure class="image">
                   <img
                     class="is-rounded"
+                    
                     src="assets/images/aboutme.jpg"
                     alt="Placeholder image"
                   />
@@ -203,25 +194,22 @@
       </div>
     </section>
 
+    <!-- -------------------------SKILLS---------------------------- -->
 
-<!-- -------------------------SKILLS---------------------------- -->
-
-    <section class="section" id="about">
+    <section class="section">
       <div class="section-heading">
         <h3 class="title is-2">Skills & Abilities</h3>
         <div class="container">
           <!-- SKILLS -->
           <div class="column">
-            <div class="card">
+            <div class="card" id="skills">
               <div class="card-content skills-content">
                 <!-- <h3 class="title is-4">Skills</h3> -->
                 <div class="content">
-                  
                   <i class="fab fa-html5 fa-5x" id="logo"></i>
                   <i class="fab fa-css3-alt fa-5x" id="logo"></i>
-                  <i class="fas fa-database fa-5x" id="logo"></i>
                   <i class="fab fa-node fa-5x" id="logo"></i>
-
+                  <i class="fas fa-database fa-5x" id="logo"></i>
                 </div>
               </div>
             </div>
@@ -235,17 +223,17 @@
       <div class="container">
         <div class="section-heading">
           <h3 class="title is-2">Portfolio</h3>
-          <h5 class="subtitle is-6">Latest projects</h5>
+          <!-- <h5 class="subtitle is-6">Latest projects</h5> -->
           <br />
           <div class="container portfolio-container">
             <div class="columns">
               <!-- *******COLUMN 1 of 3*********** -->
               <div class="column is-4">
                 <!-- POKEMON APP -->
-                <div class="card">
+                <div class="card" id="port_cards">
                   <header class="card-header">
                     <p class="card-header-title">
-                      <span>All Things Pokemon</span>
+                      All Things Pokemon
                     </p>
                   </header>
                   <div class="card-content">
@@ -260,7 +248,7 @@
                   <footer class="card-footer">
                     <div class="buttons are-medium">
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://gsteed1677.github.io/furry-bassoon/"
@@ -268,7 +256,7 @@
                         ><i class="fas fa-window-maximize"></i>Preview</a
                       >
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://github.com/gsteed1677/furry-bassoon"
@@ -280,10 +268,10 @@
                 </div>
 
                 <!-- TEAM APP -->
-                <div class="card">
+                <div class="card" id="port_cards">
                   <header class="card-header">
                     <p class="card-header-title">
-                      <span>Team Summary</span>
+                      Team Summary
                     </p>
                   </header>
                   <div class="card-content">
@@ -298,7 +286,7 @@
                   <footer class="card-footer">
                     <div class="buttons are-medium">
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://github.com/dbailey11/team_summary"
@@ -306,7 +294,7 @@
                         ><i class="fas fa-window-maximize"></i>Preview</a
                       >
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://github.com/dbailey11/team_summary"
@@ -321,10 +309,10 @@
               <!-- *******COLUMN 2 of 3*********** -->
               <div class="column is-4">
                 <!-- CAT MATCH APP -->
-                <div class="card">
+                <div class="card" id="port_cards">
                   <header class="card-header">
                     <p class="card-header-title">
-                      <span>The Purr-fect Match</span>
+                      The Purr-fect Match
                     </p>
                   </header>
                   <div class="card-content">
@@ -339,7 +327,7 @@
                   <footer class="card-footer">
                     <div class="buttons are-medium">
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://mighty-sea-42900.herokuapp.com/"
@@ -347,7 +335,7 @@
                         ><i class="fas fa-window-maximize"></i>Preview</a
                       >
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://github.com/CodyOps/Project-2"
@@ -359,10 +347,10 @@
                 </div>
 
                 <!-- PLANNER APP -->
-                <div class="card">
+                <div class="card" id="port_cards">
                   <header class="card-header">
                     <p class="card-header-title">
-                      <span>Daily Planner</span>
+                      Daily Planner
                     </p>
                   </header>
                   <div class="card-content">
@@ -377,7 +365,7 @@
                   <footer class="card-footer">
                     <div class="buttons are-medium">
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://dbailey11.github.io/devs_daily_planner/"
@@ -385,7 +373,7 @@
                         ><i class="fas fa-window-maximize"></i>Preview</a
                       >
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://github.com/dbailey11/devs_daily_planner"
@@ -400,10 +388,10 @@
               <!-- *******COLUMN 3 of 3*********** -->
               <div class="column is-4">
                 <!-- EMP TRACKER APP -->
-                <div class="card">
+                <div class="card" id="port_cards">
                   <header class="card-header">
                     <p class="card-header-title">
-                      <span>Employee Tracker</span>
+                      Employee Tracker
                     </p>
                   </header>
                   <div class="card-content">
@@ -418,7 +406,7 @@
                   <footer class="card-footer">
                     <div class="buttons are-medium">
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://dbailey11.github.io/devs_daily_planner/"
@@ -426,7 +414,7 @@
                         ><i class="fas fa-window-maximize"></i>Preview</a
                       >
                       <a
-                        class="button is-dark"
+                        class="button is-link"
                         type="button"
                         role="button"
                         href="https://github.com/dbailey11/employee_tracker"
@@ -448,9 +436,9 @@
       <div class="container">
         <div class="section-heading">
           <h3 class="title is-2">Contact</h3>
-          <h4 class="subtitle is-5">Shoot me a message</h4>
+          <!-- <h4 class="subtitle is-5">Shoot me a message</h4> -->
         </div>
-        <div class="columns"> 
+        <div class="columns">
           <div class="column is-6 is-offset-3">
             <div class="box">
               <div class="field">
@@ -490,7 +478,7 @@
       </div>
     </section>
 
-    <br>
+    <br />
 
     <!-- ------------------FOOTER---------------------- -->
     <footer class="footer has-background-dark">
